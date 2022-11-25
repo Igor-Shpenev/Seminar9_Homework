@@ -13,4 +13,5 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input number N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Sum of the numbers in the range from {m} to {n} is {SumNumbers(m, n)}");
+if (m < 1 | n < 1) Console.Write("Error");
+else Console.WriteLine($"Sum of the numbers in the range from {m} to {n} is {SumNumbers(m, n)}");
